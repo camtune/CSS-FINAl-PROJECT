@@ -1,0 +1,437 @@
+/* CSS Reset */
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, {
+    margin: 0;
+    padding: 0;
+    font-weight: normal; */
+} 
+
+/* Universal box-sizing for all elements */
+* {
+    box-sizing: border-box;
+}
+
+body {
+background-color: rgb(148, 165, 157);
+}
+
+/* Skip to Main Content / Hidden from Page */
+#skip {
+    background-color:  aquamarine;
+    color:rgb(21, 21, 100);
+    display: block;
+    position: absolute;
+    left: -999px;
+    top: -999px;
+    margin: 10px;
+    }
+
+ /*Allow Keyboard focus to access elements with Tab key */ 
+#skip:focus {
+    left: 0;
+    top: 0;
+    padding: 4px;
+    }
+
+/* Page and Code Mode Logo inside <div> */
+#divTitleLogo {
+       display: flex;
+       flex-wrap: nowrap;
+       width: 100%;
+    }
+
+/* Header Background Color */
+#header1 {
+    background-color: rgb(79, 82, 81);
+}
+
+/* <h1> <article> title inside <main>  */
+h1 {
+ text-align: center;
+ color: white;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ width: 100%; 
+ height: 60px;
+ background-color: rgb(47, 49, 48);
+ box-shadow:  2px 3px 10px   rgb(255, 255, 255);
+ padding:4px;
+ margin: 4px;
+ 
+}
+
+/* <h1> <article> title inside <main> with id 
+attribute inside <span> element  */
+#bannerTitle {
+    box-shadow:  0px 3px 4px   rgb(210, 210, 218);
+    padding-left: 10px; 
+    padding-right: 10px; 
+}
+
+/* <h2> title */
+h2  {
+    text-align: center;  
+    font-size: 20px;  
+}
+
+/* <h3> title */
+h3 {
+ text-align: center;
+ font-size: 15px;
+ color:rgb(23, 24, 25);
+/*  border: 2px solid rgba(189, 190, 190, 0.585); */
+ padding:2px;
+}
+/* <h3> title with id */
+#titleGallery {
+    color: white;
+    box-shadow:  0px 3px 4px   rgb(180, 180, 184);
+    border-radius: 5%;
+    border: 2px solid rgb(100, 100, 100);
+    width: 200px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+/* <h4> title */
+h4 {
+    background-color: aquamarine;
+    border: 2px 
+    solid black;
+    padding:4px; 
+}
+
+/* <nav> bar with menu list items  */
+nav {
+    height: 50px;
+    background-color:  rgb(107, 124, 115);
+    margin-left: 4px;
+    margin-right: 4px;
+    padding:4px;
+}
+
+/* Nav bar container */
+#list3 a {
+     overflow:hidden;
+}
+
+/* Navbar links */
+#list3 a {
+    float: right; 
+    display:block;
+  }
+
+/* On screens that are 600px wide or less, make the menu links stack in a v-shape
+instead of next to each other */
+@media screen and (max-width: 600px) {
+    #list3 a {
+     float: none;
+     width: 100%; 
+    font-size: 10px;
+    margin-top: -15px;  
+    }
+  }
+
+/* Banner container */
+#divTitleLogo {
+ overflow:hidden;
+}
+
+/* Banner Title  */
+#divTitleLogo #bannerTitle {
+    display:block;
+  }
+  
+/* On screens that are 600px wide or less,shrink banner title.
+*/
+@media screen and (max-width: 600px) {
+    #divTitleLogo #bannerTitle{
+     float: none;
+     width: 100%;
+    font-size: 20px;
+    margin-top: 2px;
+    }
+  }
+
+/* Logo image Container */
+#divTitleLogo {
+    overflow:hidden;
+}
+
+/* Logo Image  */
+#divTitleLogo #logo  {
+    display:block;
+  }
+
+/* On screens that are 600px wide or less, shrink logo image.*/
+@media screen and (max-width: 600px) {
+    #divTitleLogo #logo{
+     float: none;
+     width: 20%;   
+    }
+  }
+
+/* Unordered list inside <nav> bar */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    /* border:2px solid rgb(255, 128, 0); */
+    font-size: 15px;
+    padding:4px;
+    list-style-type: none;
+    margin: 7px;  
+}
+
+/* <nav> bar <li> items with pseudo hover class */
+li a:hover {
+  background-color: aquamarine;
+  box-shadow:  2px 3px 4px   rgb(21, 21, 100);
+  color: rgb(21, 21, 120);
+  font-weight: bold;
+}
+
+/* Anchor tags */
+a {
+    color: rgb(245, 245, 249);
+    text-decoration: none;
+    border: 2px solid rgb(89, 103, 96);
+    padding: 4px;
+    border-radius: 40%;
+    background-color: rgb(6, 22, 14);
+    box-shadow:  2px 3px 4px  rgba(255, 255, 255, 80%); 
+}
+
+/*Sidebar element with pseudo hover class assigned to anchor tags  */
+aside a:hover {
+  background-color: rgb(238, 240, 240);
+  color: rgb(21, 21, 120);
+  font-weight: bold;
+}
+
+/* Main content section */
+main {
+
+    background-color:   rgb(47, 49, 48);
+    border: 2px solid  rgb(79, 82, 81);
+    box-shadow:  2px 3px 4px  rgb(87, 87, 93);
+    padding:8px;
+    margin-top: 2px;   
+}
+
+/* Button links */
+button {
+    color:rgb(235, 228, 228);
+    font-size: 10px;
+    margin: 10px;
+    background-color: rgb(79, 82, 81);
+    border-radius: 20%;
+    box-shadow:  2px 3px 4px  rgb(87, 87, 93);
+}
+
+/* Button with hover event */
+button:hover {
+        background-color: rgb(62, 81, 72);
+        box-shadow:  2px 3px 4px   rgb(21, 21, 100);
+        color: rgb(239, 2, 18);
+        font-weight: bold;
+} 
+
+/* Main topic */
+article {
+   /*  display: flex; */
+    background-color: aquamarine;
+    border:2px solid  rgb(79, 82, 81);
+    box-shadow:  2px 3px 4px  rgb(245, 243, 243);
+    font-size: 20px;   */
+    padding: 4px;
+}
+
+/* Study at U_of_M link with transition */
+
+ #study {
+width: 10px;
+font-size: 10px;
+transition: color;
+  
+}
+
+/* Transition effect */
+#study:hover {
+    color:  rgb(21, 21, 100);
+    font-weight: bold;
+    background-color:  aquamarine;
+
+
+}
+
+/* Main topic <section> */
+p {
+    text-align:center;  
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 12px;
+}
+
+
+/* Page Code Mode Logo */
+.logo {
+   width: 50px;
+   height: 61px; 
+   border: 4px solid  rgb(89, 103, 96);
+   box-shadow:  2px 3px 4px  rgba(255, 255, 255, 80%);
+   border-radius: 5%;
+   /* float:left; */
+   margin-left:5px;
+   margin-right: 5px;;
+   margin-top:3px;
+} 
+
+/* Coding Languages Image with id inside <div> set to flex */
+#divCodeImage {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+ 
+/* Coding Laguages Image */
+ #codeImage {
+   width: 20%;
+   border: 2px solid rgb(239, 239, 245);
+   border-radius: 5%;
+   margin-top: 12px;
+   margin-left: auto;
+   margin-right: auto;
+} 
+
+/* .gallery container set to grid */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 20px;
+    justify-content: center;
+    background-color: rgb(9, 9, 9);
+    border-width: 50px;
+    border-radius: 10%;
+    box-shadow:  2px 3px 4px rgb(171, 158, 158);
+    padding: 30px;
+   /*  margin-left: 23%; */
+    width: 100%;   
+
+}
+
+/* Helping to make sure images don't shrink to small when resizing screen*/
+ @media(max-width:525px){
+    .gallery{
+    grid-template-columns: repeat( auto-fit, minmax(100%, 1fr));
+    }
+  } 
+
+ 
+  /* div container for pics with class="pics" */
+.pics {
+    object-fit: cover;
+    padding-top: 20px;
+    padding-left: 15px;
+    width: 50%;
+    height: 150px;
+    transition: transform 2s;
+    margin-left: 25%;
+}
+
+  /* Hover event on div container with class="pics" */
+   .pics:hover {
+   transform: scale(1.5) translateX(10%) translateY(10%);
+   background-color: rgb(79, 82, 81);
+   border-color: 2px solid white;
+   border-radius: 20%;
+}
+
+
+
+/* Styling images in .pics container  */
+.pics img {
+    width: 100%;
+    height: 100%;;
+    object-fit: scale-down;
+    padding-top: 0px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    padding-left: 10px; 
+}
+
+/* Styling .pics container */
+.gallery .pics {
+    border: 2px solid aquamarine;
+    box-shadow:  2px 3px 4px  rgba(255, 255, 255, 80%);
+    color: white; 
+} 
+
+/* Reshaping borber on even numbered pics */
+.gallery :nth-child(even) {
+    border-radius: 20%;
+}
+
+/* Font Color for the question on Option list */
+label {
+    color: white;
+    font-size: 12px;
+}
+
+
+/* Dropdown option menu */
+#divSelectOption {
+    border: 2px solid rgba(127, 255, 212, 50%); 
+    box-shadow:  2px 3px 4px  rgb(134, 134, 136);
+    border-radius: 5%;
+    margin-top:20px;
+    text-align: center;  
+}
+ /* select element with id*/
+#select1 {
+    justify-content: center;
+    margin-top: 10px;;
+}
+
+/* p tag in option list with id */
+#favCode {
+    color: white;
+    margin-top: 0px;
+}
+
+/* span tag with class selector for data output */
+.output {
+   color: aquamarine;
+}
+
+/* Copyright Info */
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    font-weight: bold;
+    color: rgb(246, 245, 245);
+    background-color: rgb(47, 49, 48);
+    border: 2px solid rgb(16, 15, 16);
+    box-shadow:  2px 3px 4px  rgb(21, 21, 100);
+    padding:2px;
+    margin-top: 2px;
+}
+
+/* Footer with hover pseudo class */
+footer #backTotop {
+    justify-content: center;  
+}
+
+/* Back to Top Anchor tag with id */
+footer #backTotop:hover {
+   background-color:aquamarine;
+   color: black;     
+}
+
+
+
+
+
